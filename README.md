@@ -2,6 +2,8 @@
 
 [Kubernetes](http://kubernetes.io)是Google基于[Borg](https://research.google.com/pubs/pub43438.html)开源的容器编排调度引擎，作为[CNCF](https://cncf.io)（Cloud Native Computing Foundation）最重要的组件之一，它的目标不仅仅是一个编排系统，而是提供一个规范，可以让你来描述集群的架构，定义服务的最终状态，Kubernetes可以帮你将系统自动地达到和维持在这个状态。Kubernetes作为云原生应用的基石，相当于一个云操作系统，其重要性不言而喻。
 
+云原生技术有利于各组织在公有云、私有云和混合云等新型动态环境中，构建和运行可弹性扩展的应用。云原生的代表技术包括**容器**、**服务网格**、**微服务**、**不可变基础设施**和**声明式API**。这些技术能够构建容错性好、易于管理和便于观察的松耦合系统。结合可靠的自动化手段，云原生技术使工程师能够轻松地对系统作出频繁和可预测的重大变更。——CNCF（云原生计算基金会）。
+
 ## 关于本书
 
 <p align="left">
@@ -16,7 +18,7 @@
   </a>
 </p>
 
-本书起始于2017年3月，记录了本人从零开始学习和使用Kubernetes的心路历程，着重于经验分享和总结，同时也会有相关的概念解析，希望能够帮助大家少踩坑，少走弯路，还会指引大家关注Kubernetes生态周边，如微服务构建、DevOps、大数据应用、[Service Mesh](https://jimmysong.io/posts/what-is-a-service-mesh/)、Cloud Native等领域。
+本书开源于2017年3月，是第一本系统整理的开源中文版Kubernetes参考资料，记录了本人从零开始学习和使用Kubernetes的历程，着重于总结和资料分享，同时也会有相关的概念解析，希望能够帮助大家少踩坑，少走弯路，还会指引大家关注Kubernetes生态周边，如微服务构建、DevOps、大数据应用、[Service Mesh](https://jimmysong.io/blog/what-is-a-service-mesh/)、Cloud Native等领域。
 
 ### 开始之前
 
@@ -35,7 +37,6 @@
 - 云原生开源组件
 - 云原生应用与微服务架构
 - 基于Kubernetes的Service Mesh架构
-- Kubernetes与微服务结合实践
 
 起初写作本书时，安装的所有组件、所用示例和操作等皆基于 **Kubernetes 1.6+** 版本，同时我们也将密切关注Kubernetes的版本更新，随着它的版本更新升级，本书中的Kubernetes版本和示例也将随之更新。
 
@@ -49,7 +50,7 @@
 - 按照[说明](https://github.com/rootsongjc/kubernetes-handbook/blob/master/CODE_OF_CONDUCT.md)自行编译成离线版本
 - Fork 一份添加你自己的笔记自行维护，有余力者可以一起参与进来
 
-**注意：本书中的 Service Mesh 相关内容已不再维护，请转至 [istio-handbook](https://www.servicemesher.com/istio-handbook) 浏览。**
+**注意：Service Mesh 已成立独立的 [istio-handbook](https://www.servicemesher.com/istio-handbook)，本书中的 Service Mesh 相关内容已不再维护。**
 
 ## 快速开始
 
@@ -77,37 +78,23 @@
 
 ## 社区&读者交流
 
-- **微信群**：K8S&Cloud Native实战，扫描我的微信二维码，[Jimmy Song](http://jimmysong.io/about)，添加时请备注姓名-公司/学校/组织/机构等。
-- **Slack**：全球中文用户可以加入[Kubernetes官方Slack](http://slack.k8s.io)中文频道**cn-users channel**
-- **知乎专栏**：[云原生应用架构](https://zhuanlan.zhihu.com/cloud-native)
-- **与我联系**：扫描下面的二维码关注Jimmy Song 的<u>个人微信公众号</u>CloudNativeGo（云原生应用架构）
+- [云原生社区](https://jimmysong.io/contact/)：备注姓名-公司/学校/组织/机构等，并注明加入云原生社区。
+- [云原生应用架构](https://zhuanlan.zhihu.com/cloud-native)：知乎专栏
 
-<p align="center">
-  <img src="images/cloud-native-go-wechat-qr-code.jpg" alt="云原生应用架构微信公众号二维码"/>
-</p>
-
-
-- **ServiceMesher**：ServiceMesher 社区公众号，下承 Kubernetes、上接 Serverless，云原生应用的通信层，旨在加强行业内部交流，促进开源文化构建，推动 Kubernetes、Service Mesh、Serverless 等云原生技术在企业落地，发布活动及业界最前沿资讯。[加入组织](http://www.servicemesher.com/contact/)。
-
-<p align="center">
-  <img src="images/servicemesher-wechat-public.jpg" alt="ServiceMesher微信公众号二维码"/>
-</p>
-
-
-## 读者反馈
-
-以下是部分读者反馈，希望更多人[加入我们](http://www.servicemesher.com)，共同打造中国质量最高的云原生社区！
-
-![Kubernetes handbook 读者反馈](images/feedback.jpg)
 
 ## 云原生出版物
 
-以下为本人参与出版的图书。
+以下为本人参与出版的云原生相关图书。
 
-- [Cloud Native Go](https://jimmysong.io/posts/cloud-native-go/) - 基于Go和React的web云原生应用构建指南（Kevin Hoffman & Dan Nemeth著 宋净超 吴迎松 徐蓓 马超 译），电子工业出版社，2017年6月出版
-- [Python云原生](https://jimmysong.io/posts/cloud-native-python/) - 使用Python和React构建云原生应用（Manish Sethi著，宋净超译），电子工业出版社，2018年6月出版
-- [云原生Java](https://jimmysong.io/posts/cloud-native-java/) - Spring Boot、Spring Cloud与Cloud Foundry弹性系统设计（Josh Long & Kenny Bastani著，张若飞 宋净超译 ），电子工业出版社，2018年7月出版
-- [未来架构——从服务化到云原生](https://jimmysong.io/posts/future-architecture-from-soa-to-cloud-native/) - 张亮 吴晟 敖小剑 宋净超 著，电子工业出版社，2019年3月出版
+- [Cloud Native Go](https://jimmysong.io/book/cloud-native-go/) - 基于Go和React的web云原生应用构建指南（Kevin Hoffman & Dan Nemeth著 宋净超 吴迎松 徐蓓 马超 译），电子工业出版社，2017年6月出版
+- [Python云原生](https://jimmysong.io/book/cloud-native-python/) - 使用Python和React构建云原生应用（Manish Sethi著，宋净超译），电子工业出版社，2018年6月出版
+- [云原生Java](https://jimmysong.io/book/cloud-native-java/) - Spring Boot、Spring Cloud与Cloud Foundry弹性系统设计（Josh Long & Kenny Bastani著，张若飞 宋净超译 ），电子工业出版社，2018年7月出版
+- [未来架构——从服务化到云原生](https://jimmysong.io/book/future-architecture/) - 张亮 吴晟 敖小剑 宋净超 著，电子工业出版社，2019年3月出版
+
+## 推荐
+
+- [极客时间专栏《深入剖析 Kubernetes》](https://tva1.sinaimg.cn/large/006y8mN6ly1g7vf4p12rpj30u01hdjwp.jpg)：快速入门学习 Kubernetes
+- [深入浅出云计算](https://time.geekbang.org/column/intro/292?code=EhFrzVKvIro8U06UyaeLCCdmbpk7g010iXprzDxW17I%3D&utm_term=SPoster)：云原生时代给开发者和架构师的云计算指南
 
 ## 支持本书
 
