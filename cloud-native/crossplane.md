@@ -90,7 +90,7 @@ helm install controller -n oam-system ./manifests/charts/oam-core-resources/
 kubectl apply -f manifests/oam/containerized-workload
 ```
 
-该应用采用 [OAM 规范定义](../cloud-native/define-cloud-native-app.md)，包括 Workload、Component、Trait 和 ApplicationConfiguration，感兴趣的读者可以到 [manifests/oam/containerized-workload](https://github.com/rootsongjc/kubernetes-handbook/tree/master/manifests/oam/containerized-workload) 目录下查看，其中 `sample_workload_definition.yaml` 文件的内容如下：
+该应用采用 [OAM 规范定义](./oam.md)，包括 Workload、Component、Trait 和 ApplicationConfiguration，感兴趣的读者可以到 [manifests/oam/containerized-workload](https://github.com/rootsongjc/kubernetes-handbook/tree/master/manifests/oam/containerized-workload) 目录下查看，其中 `sample_workload_definition.yaml` 文件的内容如下：
 
 ```yaml
 apiVersion: core.oam.dev/v1alpha2
