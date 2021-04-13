@@ -2,16 +2,6 @@
 
 > 云原生是一种行为方式和设计理念，究其本质，凡是能够提高云上资源利用率和应用交付效率的行为或方式都是云原生的。云计算的发展史就是一部云原生化的历史。Kubernetes 开启了云原生 1.0 的序幕，服务网格 Istio 的出现，引领了后 Kubernetes 时代的微服务，serverless 的再次兴起，使得云原生从基础设施层不断向应用架构层挺进，我们正处于一个云原生 2.0 的新时代。—— [Jimmy Song](https://jimmysong.io)
 
-<p align="center">
-  <a href="https://cloudnative.to">
-    <img src="https://res.cloudinary.com/jimmysong/image/upload/v1594445787/images/github-banner.jpg" alt="加入云原生社区" title="加入云原生社区">
-  </a>
-</p>
-
-👉 [https://cloudnative.to](https://cloudnative.to)
-
----
-
 [Kubernetes](http://kubernetes.io) 是 Google 于 [2014 年 6 月](https://jimmysong.io/cloud-native/note/open-source/)基于其内部使用的 [Borg](https://research.google.com/pubs/pub43438.html) 系统开源出来的容器编排调度引擎，Google 将其作为初始和核心项目贡献给 [CNCF](https://cncf.io)（云原生计算基金会），近年来逐渐发展出了云原生生态。
 
 Kubernetes 的目标不仅仅是一个编排系统，而是提供一个规范用以描述集群的架构，定义服务的最终状态，使系统自动地达到和维持该状态。Kubernetes 作为云原生应用的基石，相当于一个云原生操作系统，其重要性不言而喻。
@@ -81,24 +71,6 @@ Kubernetes Handbook 开源于 2017 年 3 月并在其后不断完善，是第一
 - [查看如何贡献](https://github.com/rootsongjc/kubernetes-handbook/blob/master/CONTRIBUTING.md)
 - [查看文档的组织结构与使用方法](https://github.com/rootsongjc/kubernetes-handbook/blob/master/CODE_OF_CONDUCT.md)
 
-## License
-
-<p align="left">
-  <img src="images/cc4-license.png" alt="CC4 License"/>
-</p>
-
-[署名 - 非商业性使用 - 相同方式共享 4.0 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)
-
-## 云原生社区
-
-云原生社区是一个中立的云原生终端用户社区，始与作者于 2016 年成立的 Kubernetes & CloudNative 实战群，覆盖了上千名早期云原生拥护者。在此基础上于 2020 年 5 月，由 CNCF 大使、开源领域意见领袖共同发起将原社群升级为云原生社区，旨在推广云原生技术，构建开发者生态。
-
-官方网站 <https://cloudnative.to>，关注云原生社区微信公众号，[申请加入社区](https://mp.weixin.qq.com/s/vWlSdzz2MNdXRr0sd2-LFg)。
-
-<p align="center">
-<img src="images/cloud-native-wechat.jpg" alt="云原生社区微信公众号" title="云原生社区微信公众号"/>
-</p>
-
 ## 云原生出版物
 
 以下为笔者参与出版的云原生相关图书。
@@ -108,11 +80,20 @@ Kubernetes Handbook 开源于 2017 年 3 月并在其后不断完善，是第一
 - [云原生 Java](https://jimmysong.io/book/cloud-native-java/) - Spring Boot、Spring Cloud 与 Cloud Foundry 弹性系统设计（Josh Long & Kenny Bastani 著，张若飞 宋净超译 ），电子工业出版社，2018 年 7 月出版
 - [未来架构 —— 从服务化到云原生](https://jimmysong.io/book/future-architecture/) - 张亮 吴晟 敖小剑 宋净超 著，电子工业出版社，2019 年 3 月出版
 - [云原生模式](https://jimmysong.io/book/cloud-native-patterns) - 设计拥抱变化的软件（Cornelia Davis 著，张若飞 宋净超 译），电子工业出版社，2020 年 8 月出版
+- [Quarkus 实战](https://jimmysong.io/book/quarkus-cookbook/) - 专为 Kubernetes 而优化的 Java 解决方案（Alex Soto Bueno、Jason Porter 著，张晓宇 刘岩 宋净超 译），机械工业出版社，2021 年 3 月出版
 
-## 推荐
+## 版权与许可证
 
-- [Awesome Cloud Native](https://github.com/rootsongjc/awesome-cloud-native)：云原生开源项目大全
-- [深入剖析 Kubernetes](https://time.geekbang.org/column/intro/116?code=IRLmmVKgTghcFr5iafwl9kZezb48Uhf4Pjdf13-W3ko%3D&utm_term=SPoster)：极客时间推出的 Kubernetes 专栏
-- [深入浅出云计算](https://time.geekbang.org/column/intro/292?code=EhFrzVKvIro8U06UyaeLCCdmbpk7g010iXprzDxW17I%3D&utm_term=SPoster)：云原生时代给开发者和架构师的云计算指南
-- [《Istio Handbook——Istio 服务网格进阶实战》](https://www.servicemesher.com/istio-handbook/)：ServiceMesher 出品的开源电子书
-- [云原生社区 Kubernetes SIG](https://i.cloudnative.to/kubernetes/) - 云原生社区组织的 Kubernetes 兴趣小组
+本书版权归 Jimmy Song 所有， 您可以使用[署名 - 非商业性使用 - 相同方式共享 4.0 (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)  协议共享。
+
+## 云原生社区
+
+<p align="center">
+  <a href="https://cloudnative.to">
+    <img src="https://res.cloudinary.com/jimmysong/image/upload/v1594445787/images/github-banner.jpg" alt="加入云原生社区" title="加入云原生社区">
+  </a>
+</p>
+
+云原生社区是一个中立的云原生终端用户社区，始与作者于 2016 年成立的 Kubernetes & CloudNative 实战群，覆盖了上千名早期云原生拥护者。在此基础上于 2020 年 5 月，由 CNCF 大使、开源领域意见领袖共同发起将原社群升级为云原生社区，旨在推广云原生技术，构建开发者生态。
+
+官方网站 <https://cloudnative.to>，关注云原生社区微信公众号，[申请加入社区](https://mp.weixin.qq.com/s/vWlSdzz2MNdXRr0sd2-LFg)。
